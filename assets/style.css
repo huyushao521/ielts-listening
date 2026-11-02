@@ -219,13 +219,132 @@ section h2 {
 
 .footer a { color: #667eea; font-weight: 500; }
 
+/* ===== Search ===== */
+.search-wrap { margin-bottom: 28px; }
+
+.search-box {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 15px;
+    font-family: inherit;
+    color: #2c3e50;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-box:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102,126,234,0.15);
+}
+
+.search-hint {
+    font-size: 13px;
+    color: #94a3b8;
+    margin-top: 8px;
+    padding-left: 4px;
+}
+
+/* ===== Chips ===== */
+.chip-row { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.chip {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    font-size: 13px;
+    font-weight: 500;
+    color: #475569;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.chip:hover {
+    border-color: #667eea;
+    color: #667eea;
+    text-decoration: none;
+}
+
+.chip-n { color: #94a3b8; font-size: 12px; }
+
+/* ===== Book Section ===== */
+.book { margin-bottom: 48px; scroll-margin-top: 72px; }
+
+.book-head {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 3px solid #667eea;
+}
+
+.book-head h2 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #1e293b;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.book-year { font-size: 13px; color: #94a3b8; }
+
+.book-note {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 16px;
+    padding: 10px 14px;
+    background: #f1f5f9;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+/* ===== Position Tag ===== */
+.pos {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 6px;
+    background: #eef2ff;
+    color: #667eea;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+/* ===== Disclaimer ===== */
+.disclaimer {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #94a3b8;
+    padding: 16px 20px;
+    background: #fff;
+    border: 1px dashed #e2e8f0;
+    border-radius: 12px;
+}
+
+.disclaimer code {
+    font-size: 12px;
+    color: #667eea;
+    background: #eef2ff;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
     .hero h1 { font-size: 28px; }
+    .page-header h1 { font-size: 24px; }
     .hero-cards { flex-direction: column; }
     .card { min-width: auto; width: 100%; }
     .nav-links { gap: 16px; }
+    .nav-links a { font-size: 13px; }
     .vocab-table { font-size: 12px; }
     .vocab-table th, .vocab-table td { padding: 8px 10px; }
     .tips-grid { grid-template-columns: 1fr; }
+    .book-head h2 { font-size: 20px; }
 }
